@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Test</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            .headBackground{
+                height:135px;
+                background-repeat:no-repeat;
+                background-position:right top;
+                margin-right: 10%;
+                background-image:url("/images/header.jpg");
+            }
+            .mainBackground{
+                position: fixed;
+                opacity: .1;
+                margin:auto;
+                z-index: -1;
+                width:95%;
+            }
+            .affix{
+                top:0;
+                width: 100%;
+                z-index: 9999 !important;
+            }
+            .black{
+                background-color: white;
+            }
+        </style>
+    </head>
+
+    <body class="contianer-fluid">
+        <div>
+            <header class="headBackground container">
+                <h1>This is a test header</h1>
+            </header>
+
+            <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="80">
+                <div>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">WebSiteName</a>
+                    </div>
+                    <div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#">Menu 1</a></li>
+                                <li><a href="#">Menu 2</a></li>
+                                <li><a href="#">Menu 3</a></li>
+                                <li class="dropdown right"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 4 <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Menu 4-1</a></li>
+                                        <li><a href="#">Menu 4-2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <img class="mainBackground" src="/images/background.jpg">
+            <section class="container">
+                <aside class="col-lg-1"></aside>
+                <article class="col-lg-6 black">
+                    <h3>Test article</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a mauris vitae est aliquam consectetur. Etiam ipsum augue, egestas quis sapien a, blandit mattis tellus. Proin sit amet tincidunt augue. Praesent eget dignissim ante. Aliquam fermentum magna ex, non ultrices nulla vulputate vitae. Fusce hendrerit eu erat iaculis porta. Ut ullamcorper fermentum nisl, non cursus arcu fermentum vitae. Pellentesque sollicitudin dignissim dignissim. Nam nunc libero, rhoncus faucibus ultrices ac, egestas in nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean nisl purus, molestie sit amet condimentum in, mollis aliquet sapien. Nam at lacus id lorem vehicula accumsan. Aliquam vitae bibendum ligula. Mauris pharetra ipsum urna, a faucibus lorem egestas in. Morbi ut tempor felis, ut euismod justo. Pellentesque dignissim purus arcu, et ornare metus consectetur quis.</p>
+                    <p>Nullam elementum mauris eu porttitor auctor. Fusce ut vulputate sem. Ut congue lectus ut felis sagittis, porttitor feugiat diam feugiat. Proin congue viverra eleifend. Donec cursus ex nec dapibus feugiat. Cras a ultricies nunc, ut posuere dui. Sed tempor tempor nulla ac maximus. Ut ut porta purus. Phasellus feugiat ligula vitae purus sagittis, ac consequat ligula ultrices.</p>
+                    <p>Aenean id varius ante. In vitae ultrices nulla, quis aliquet sem. Sed sollicitudin turpis efficitur ultrices sodales. Sed et magna non diam viverra ornare eu a eros. Vivamus justo tortor, varius ut ligula sit amet, lobortis accumsan ipsum. Suspendisse ornare varius metus, vitae posuere quam congue nec. Proin aliquam viverra ex ac viverra. Aliquam velit augue, interdum viverra lacinia non, iaculis ut nulla. Nunc rutrum sagittis sapien quis rhoncus. Donec ligula magna, interdum nec ullamcorper sed, hendrerit sed dui. Proin id cursus orci.</p>
+                    <p>Maecenas in vestibulum orci, in sagittis quam. Pellentesque velit erat, sollicitudin non luctus sed, laoreet vitae quam. Aliquam feugiat fringilla turpis euismod ornare. Etiam cursus tellus dolor, malesuada pharetra augue bibendum a. Fusce consequat tellus id porta dignissim. Nam et ultricies massa, ac imperdiet nisl. Donec pretium sapien eu porttitor dignissim. Vivamus cursus aliquam faucibus. Phasellus finibus a felis a finibus. Proin vitae laoreet quam, at ultrices urna. Pellentesque laoreet justo in eros accumsan, in suscipit ligula egestas. Sed bibendum et tortor congue consequat. Duis eu vestibulum lorem. Praesent venenatis turpis eget facilisis consequat. Cras interdum sagittis nunc, ut gravida purus. Aliquam eget risus dui.</p>
+                    <p>Maecenas non vehicula erat. Ut purus dolor, semper quis nunc ut, feugiat porttitor arcu. Maecenas vehicula massa quis odio congue tincidunt. Proin porttitor hendrerit ipsum, sit amet porta magna tempor eu. Nulla scelerisque fermentum congue. Suspendisse vitae gravida est, vel pulvinar tellus. Aenean a lorem sapien. Aenean ipsum libero, porta ac tortor nec, dignissim facilisis leo.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a mauris vitae est aliquam consectetur. Etiam ipsum augue, egestas quis sapien a, blandit mattis tellus. Proin sit amet tincidunt augue. Praesent eget dignissim ante. Aliquam fermentum magna ex, non ultrices nulla vulputate vitae. Fusce hendrerit eu erat iaculis porta. Ut ullamcorper fermentum nisl, non cursus arcu fermentum vitae. Pellentesque sollicitudin dignissim dignissim. Nam nunc libero, rhoncus faucibus ultrices ac, egestas in nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean nisl purus, molestie sit amet condimentum in, mollis aliquet sapien. Nam at lacus id lorem vehicula accumsan. Aliquam vitae bibendum ligula. Mauris pharetra ipsum urna, a faucibus lorem egestas in. Morbi ut tempor felis, ut euismod justo. Pellentesque dignissim purus arcu, et ornare metus consectetur quis.</p>
+                    <p>Nullam elementum mauris eu porttitor auctor. Fusce ut vulputate sem. Ut congue lectus ut felis sagittis, porttitor feugiat diam feugiat. Proin congue viverra eleifend. Donec cursus ex nec dapibus feugiat. Cras a ultricies nunc, ut posuere dui. Sed tempor tempor nulla ac maximus. Ut ut porta purus. Phasellus feugiat ligula vitae purus sagittis, ac consequat ligula ultrices.</p>
+                    <p>Aenean id varius ante. In vitae ultrices nulla, quis aliquet sem. Sed sollicitudin turpis efficitur ultrices sodales. Sed et magna non diam viverra ornare eu a eros. Vivamus justo tortor, varius ut ligula sit amet, lobortis accumsan ipsum. Suspendisse ornare varius metus, vitae posuere quam congue nec. Proin aliquam viverra ex ac viverra. Aliquam velit augue, interdum viverra lacinia non, iaculis ut nulla. Nunc rutrum sagittis sapien quis rhoncus. Donec ligula magna, interdum nec ullamcorper sed, hendrerit sed dui. Proin id cursus orci.</p>
+                    <p>Maecenas in vestibulum orci, in sagittis quam. Pellentesque velit erat, sollicitudin non luctus sed, laoreet vitae quam. Aliquam feugiat fringilla turpis euismod ornare. Etiam cursus tellus dolor, malesuada pharetra augue bibendum a. Fusce consequat tellus id porta dignissim. Nam et ultricies massa, ac imperdiet nisl. Donec pretium sapien eu porttitor dignissim. Vivamus cursus aliquam faucibus. Phasellus finibus a felis a finibus. Proin vitae laoreet quam, at ultrices urna. Pellentesque laoreet justo in eros accumsan, in suscipit ligula egestas. Sed bibendum et tortor congue consequat. Duis eu vestibulum lorem. Praesent venenatis turpis eget facilisis consequat. Cras interdum sagittis nunc, ut gravida purus. Aliquam eget risus dui.</p>
+                    <p>Maecenas non vehicula erat. Ut purus dolor, semper quis nunc ut, feugiat porttitor arcu. Maecenas vehicula massa quis odio congue tincidunt. Proin porttitor hendrerit ipsum, sit amet porta magna tempor eu. Nulla scelerisque fermentum congue. Suspendisse vitae gravida est, vel pulvinar tellus. Aenean a lorem sapien. Aenean ipsum libero, porta ac tortor nec, dignissim facilisis leo.</p>
+                </article>
+                <aside class="col-lg-1"></aside>
+                <aside class="col-lg-3 black">
+                    <h3>Test aside</h3>
+                    <p>Maecenas non vehicula erat. Ut purus dolor, semper quis nunc ut, feugiat porttitor arcu. Maecenas vehicula massa quis odio congue tincidunt. Proin porttitor hendrerit ipsum, sit amet porta magna tempor eu. Nulla scelerisque fermentum congue. Suspendisse vitae gravida est, vel pulvinar tellus. Aenean a lorem sapien. Aenean ipsum libero, porta ac tortor nec, dignissim facilisis leo.</p>
+                    <p>Maecenas non vehicula erat. Ut purus dolor, semper quis nunc ut, feugiat porttitor arcu. Maecenas vehicula massa quis odio congue tincidunt. Proin porttitor hendrerit ipsum, sit amet porta magna tempor eu. Nulla scelerisque fermentum congue. Suspendisse vitae gravida est, vel pulvinar tellus. Aenean a lorem sapien. Aenean ipsum libero, porta ac tortor nec, dignissim facilisis leo.</p>
+                    <div>
+                        <h2>Register here:</h2>
+                        <form method="post" action="register.php">
+                            <input class="form-control" type="text" name="name" placeholder="Enter Name Here!">
+                            <br>
+                            <input class="form-control" type="email" name="em" placeholder="Enter Email Here!" required>
+                            <br>
+                            <input class="form-control" type="password" name="pw" placeholder="Enter Password Here!" required>
+                            <br><br>
+                            <input class="btn btn-default" type="submit" value="submit">
+                        </form>
+                    </div>
+                </aside>
+                <aside class="col-lg-1"></aside>
+            </section>
+            <footer class="affix-bottom">
+                <div>
+                    <p style="border: double" align="center">@copyright testfooter.</p>
+                </div>
+
+            </footer>
+        </div>
+    </body>
+</html>
